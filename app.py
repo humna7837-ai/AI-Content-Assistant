@@ -67,7 +67,7 @@ if submitted:
             
             with st.spinner("Crafting your post..."):
                 response = client.chat.completions.create(
-                    model="openai/gpt-oss-120be",
+                    model="openai/gpt-oss-120b",
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.7,
                     max_tokens=1000,
